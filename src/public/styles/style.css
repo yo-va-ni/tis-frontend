@@ -1,0 +1,13 @@
+body{
+  background: #000428;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #004e92, #000428);
+  background: linear-gradient(to right, #004e92, #000428); 
+}
+
+.logo{
+  width: 40%;
+}
+
+.nav-sign{
+  margin-left: auto;
+}
