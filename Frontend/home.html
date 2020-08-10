@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
@@ -25,9 +26,137 @@
             <li class="nav-item active">
               <a class="nav-link" href="#">ACERCA DE NOSOTROS</a>
             </li>
+            <li class="nav-item logged-in">
+              <a class="nav-link" id="logout">SALIR</a>
+            </li>
           </ul>
         </div>
     </nav>
-    <h1>Holii :3</h1>
+
+    <div class="search-bar">
+      <div class="search-bar-content">
+
+        <p>Ingresa el nombre del medicamento</p>
+        <form class="search-form">
+          <input type="text" class="form-control" placeholder="Ejm: Paracetamol"  aria-describedby="button-addon2">
+          <button class="btn btn-outline-warning" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="search-filter">
+
+        <div class="filter-group filter-location">
+          <div class="title-filter">Filtro por ubicacion</div>
+          <div class="location-levels">
+            
+            <div class="location-level">
+              <div>Departamento</div>
+              <select class="custom-select">
+                <option selected>Seleccione uno</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+            <div class="location-level">
+              <div>Provincia</div>
+              <select class="custom-select">
+                <option selected>Seleccione uno</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+            <div class="location-level">
+              <div>Distrito</div>
+              <select class="custom-select">
+                <option selected>Seleccione uno</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="filter-group filter-place">
+          <div class="title-filter">Filtro por tipo de establecimiento</div>
+          <div class="place-catgeories">
+            
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radio-todos" name="tipo-place" class="custom-control-input">
+              <label class="custom-control-label" for="radio-todos">Todos</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radio-publico" name="tipo-place" class="custom-control-input">
+              <label class="custom-control-label" for="radio-publico">Publico</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="radio-privado" name="tipo-place" class="custom-control-input">
+              <label class="custom-control-label" for="radio-privado">Privado</label>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="filter-group filter-botique">
+          <div class="title-filter">Filtro farmacia/botica</div>
+          <div>
+            <input type="email" class="form-control" id="botique" aria-describedby="emailHelp">
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <button type="button" class="btn btn-outline-success  btn-block">Success</button>
+        </div>
+
+      </div>
+
+      <div class="search-data">
+
+      </div>
+
+
+
+      <div class="filter-column">
+        <div class="title-filter">DATOS</div>
+        
+        <div class="columns-data">
+          
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="col1">
+            <label class="custom-control-label" for="col1">Nombre</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="col2">
+            <label class="custom-control-label" for="col2">Nombre Gen.</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="col3">
+            <label class="custom-control-label" for="col3">Fabricante</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="col4">
+            <label class="custom-control-label" for="col4">R. Sanitario</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="col5">
+            <label class="custom-control-label" for="col5">Sucursal</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="col6">
+            <label class="custom-control-label" for="col6">Precio</label>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    
 </body>
 </html>

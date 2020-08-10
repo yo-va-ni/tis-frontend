@@ -13,7 +13,7 @@
         <a class="navbar-brand" href="index.html">
             <img src="src/Logo_sin_fonfo.png" width="80" height="80" alt="" loading="lazy">
         </a>
-        <a class="navbar-brand" href="#">DIGEMID</a>
+        <a class="navbar-brand" href="http://www.digemid.minsa.gob.pe/">DIGEMID</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -46,7 +46,7 @@
             width="22px" height="22" alt="" loading="lazy"/>Iniciar Sesión con Facebook</button>
         </div>
         <div class="container py-3">
-          <button type="button" class="btn btn-light btn-block"><img class="mx-3" src="src/twitter.svg" 
+          <button type="button" class="btn btn-light btn-block" id="twitterLogin"><img class="mx-3" src="src/twitter.svg" 
             width="22px" height="22" alt="" loading="lazy"/>Iniciar Sesión con Twitter</button>
         </div>
       </div>
@@ -95,6 +95,20 @@
         </div>
       </div>
     </div>
+    
+    <div class="modal fade" id="signError" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Error</h3>
+          </div>
+          <div class="modal-body">
+            <p id="signErrorText"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- SCRIPTS -->
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -128,6 +142,8 @@
         const auth = firebase.auth();
         const fs = firebase.firestore();
     </script> 
+
+    <!-- Script propio -->
     <script src="main.js"></script>
 
 </body>
