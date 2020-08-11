@@ -51,8 +51,32 @@ sign-padding{
 }
 
 .search-data{
-
+    margin: 0 1rem;
 }
+.data-name{
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    border-bottom: solid 1pt rgba(0, 0, 0, 0.2);
+    padding: 0 0 0 2rem;
+}
+.card-custom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2rem;
+}
+.data-details{
+    background-color: rgba(0, 0, 0, 0.05);
+    visibility: visible;
+    padding-left: 1rem;
+    font-size: 0.8rem;
+    border: solid 0.5px rgba(0, 0, 0, 0.15);
+}
+.table-custom{
+    margin: 0;
+}
+
 
 .filter-column{
     display: flex;
